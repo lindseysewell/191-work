@@ -1,8 +1,11 @@
- # Weeks 1 and 2 of Creative Coding
+ # Weeks 1 and 2 of Creative Coding #
+
+
 
  I've had some difficulties and some successes in my first few classes.
 
- ## Problems
+ ## Problems ##
+
  Some problems I encountered include:
 
  - Becoming distracted and messing around on terminal because I feel like a hacker, thus missing important information.
@@ -35,7 +38,7 @@ Here is a fun, Star-Wars themed [lesson on creating lists for markdown.](http://
 
 Here is the main [Media Arts 191 Course Repo.](https://github.com/Montana-Media-Arts/191_CreativeCoding)
 
-### Some Coding Notes 
+### Some Coding Notes
 Some basic terminal commands include:
 
   - `mkdir` to make a directory.
