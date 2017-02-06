@@ -4,7 +4,7 @@ Weeks 1 and 2
 
  I've had some difficulties and some successes in my first few classes.
 
-  ## Problems
+## Problems
 
  Some problems I encountered include:
 
@@ -17,7 +17,7 @@ Weeks 1 and 2
  - Entering the wrong password into SourceTree, rendering it unable to function at all until the program is removed repeatedly, ~~causing mayhem and widespread panic~~ which was easily fixed.
 
 
- ## Successes
+## Successes
 
  Some victories I've had include:
 
