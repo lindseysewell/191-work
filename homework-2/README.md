@@ -1,10 +1,10 @@
- # Weeks 1 and 2 of Creative Coding #
-
+Weeks 1 and 2
+====================
 
 
  I've had some difficulties and some successes in my first few classes.
 
- ## Problems ##
+  ## Problems
 
  Some problems I encountered include:
 
