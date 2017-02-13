@@ -26,4 +26,6 @@
 
   ![image](img/screen9.jpg)
 
-  
+
+
+  Overall, I enjoyed the project even though i struggled at times.
