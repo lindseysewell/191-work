@@ -30,4 +30,6 @@
 
   Overall, I enjoyed the project even though i struggled at times.
 
-  Here is my hw-3 repo: https://lindseysewell.github.io/191-work/homework-3
+  Here is my hw-3 assignment: https://lindseysewell.github.io/191-work/homework-3
+
+  I struggled with organization until I used comments, and I had to work to understand where to plot things. I also used the p5.js reference a lot. Overall, I enjoyed the assignment, and I'm excited to see where we will go next.
