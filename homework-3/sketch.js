@@ -123,6 +123,8 @@ pop();
   pop();
   //eyebrow//
 
-
+  fill(0, 0, 0);
+  textSize(32);
+  text("Lindsey's Character", 10, 30);
 
 }
