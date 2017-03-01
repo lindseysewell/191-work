@@ -74,7 +74,7 @@ function draw() {
   pop();
 
   noStroke();
-  frameRate(10);
+  frameRate(30);
   spot.x = random (0, width);
   spot.y = random (0, height);
   x = random(0, 100);
