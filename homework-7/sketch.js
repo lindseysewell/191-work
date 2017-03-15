@@ -1,6 +1,6 @@
-  var col = 0;
-  var d = 10;
-  var x = 10;
+var d = 10;
+var col = 0;
+//var x = 10;
 
 
 function setup() {
@@ -12,6 +12,7 @@ function setup() {
 function draw() {
 
   background(200, 200, 200);
+  smile();
   col = mouseX;
   fill(col/2);
   ellipse(width/2, height/2, d, d);
@@ -25,7 +26,7 @@ function draw() {
 }
 
 
-function smiley () {
+function smile () {
 push();
 fill (255, 255, 0);
 ellipse (mouseX, mouseY, 100, 100);
@@ -34,4 +35,5 @@ ellipse (mouseX-20, mouseY-5, 5, 20);
 ellipse (mouseX+20, mouseY-5, 5, 20);
 arc(mouseX, mouseY+15, 50, 50, 0, PI, CHORD);
 pop();
+
 }
