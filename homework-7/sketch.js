@@ -12,11 +12,11 @@ function setup() {
 function draw() {
 
   background(200, 200, 200);
-  smile();
   col = mouseX;
   fill(col/2);
   ellipse(width/2, height/2, d, d);
 
+  smile();
 
 
 
