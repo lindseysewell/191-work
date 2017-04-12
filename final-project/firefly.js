@@ -10,23 +10,14 @@ Bug.prototype.display = function () {
     push();
 
     fill(this.color);
-
+    noStroke();
     translate( this.pos.x, this.pos.y );
     push();
-    push();
-//head
-    fill(0);
-    ellipse (0, -40 ,this.size * 0.5, this. size * 0.5);
-    pop();
-    ellipse(0, 0, this.size, this.size + 10);
-//dots
-    push();
-    fill(0);
-    ellipse(-20, 20, this.size * 0.25, this.size * 0.25);
-    ellipse(20, 10, this.size * 0.25, this.size * 0.25);
-    ellipse(-10, -20, this.size * 0.25, this.size * 0.25);
-    pop();
-    line (0, -40, 0, 40);
+
+    ellipse(0, 0, this.size, this.size);
+    fill(255, 200, 0, 50);
+    ellipse(0, 0, this.size + 8, this.size + 8);
+
     pop();
 
     pop();
@@ -36,7 +27,14 @@ Bug.prototype.move = function(){
 
 
     this.pos.x += this.vel.x;
-    this.pos.y += this.vel.y * 3;
+   this.pos.y += this.vel.y;
+
+
+//    this.pos.y = this.pos.y - this.speed;
+    //      if (this.pos.y <= 0 - this.size * 2){
+  //  this.pos.y = height + this.size * 2;
+  //}
+
 
     // edge check?
     if (this.pos.x >= width) {
