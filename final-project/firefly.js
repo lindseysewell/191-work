@@ -26,7 +26,7 @@ Bug.prototype.display = function () {
 Bug.prototype.move = function(){
 
 
-    this.pos.x += this.vel.x;
+    this.pos.x += this.vel.x * 2;
    this.pos.y += this.vel.y;
 
 
