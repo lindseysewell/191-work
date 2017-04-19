@@ -1,14 +1,17 @@
 var bugs = [];
 var num = 300;
+var song;
 
 function preload(){
 img = loadImage('summernight2.jpg');
-
+song = loadSound('fireflies.mp3');
 }
 
 function setup() {
+song.play();
 bg = img;
     createCanvas(1280, 700);
+
 
     for (var i = 0; i < num; i++) {
         bugs.push( new Bug(
@@ -19,6 +22,7 @@ bg = img;
         ));
     }
 }
+
 
 function draw() {
 
@@ -31,7 +35,7 @@ function draw() {
         bugs[i].move();
         bugs[i].collisionCheck(bugs, i);
     }
-    //firefly
+    // your firefly
     push();
     noStroke();
     fill(0, 200, 255);
@@ -44,4 +48,8 @@ function randColor(){
 return color( floor(random(200, 255)), floor(random(100, 255)), floor(random(0)) );
 }
 
-//https://www.youtube.com/watch?v=XWyezcyfAHU
+//make fireflies blink?
+//more interactive elements-- maybe a small game, or yellow fireflies scatter when blue comes near,
+//or become blue when it touches them
+//trail on blue firefly?
+//when music plays, bugs dance; when music stops, bugs float?
