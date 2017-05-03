@@ -1,5 +1,5 @@
 var bugs = [];
-var num = 300;
+var num = 350;
 var song;
 var sound, amplitude, cnv;
 var fft;
