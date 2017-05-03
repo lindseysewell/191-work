@@ -2,6 +2,7 @@ var bugs = [];
 var num = 300;
 var song;
 var sound, amplitude, cnv;
+var fft;
 
 
 
@@ -22,10 +23,11 @@ function mouseClicked() {
 
 function setup() {
 
-//song.play();
+
 createCanvas(1280, 700);
+ amplitude = new p5.Amplitude();
 
-
+  fft = new p5.FFT(0.2, 16);
 
 bg = img;
 
@@ -45,11 +47,22 @@ function draw() {
   background(bg);  //bg
 
 
+var level = amplitude.getLevel();
+// console.log(level);
+var bands = fft.analyze();
+
+var low = (bands[0] + bands[1] + bands[2]) / 3;
+// console.log(low);
 
     for (var i = 0; i < bugs.length; i++) {
+        bugs[i].ampoffset = level;
         bugs[i].display();
         bugs[i].move();
         bugs[i].collisionCheck(bugs, i);
+
+        if (i%3 == 0) {
+          bugs[i].sizeAdj = constrain(map(low, 200, 300, 1, 3), 0, 3);
+        }
     }
     // your firefly
     push();

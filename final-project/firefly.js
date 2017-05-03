@@ -1,9 +1,11 @@
 function Bug(init_x, init_y, size, color){
     this.pos = { x: init_x, y: init_y };
-    this.vel = { x: 1, y: 1 };
+    this.vel = { x: random(-2, 2), y: 1 };
     this.size = size;
+    this.sizeAdj = 1;
     this.rad = this.size * 0.5;
     this.color = color;
+    this.ampoffset = 0;
 }
 
 Bug.prototype.display = function () {
@@ -12,11 +14,14 @@ Bug.prototype.display = function () {
     fill(this.color);
     noStroke();
     translate( this.pos.x, this.pos.y );
+    this.ampoffset = map(this.ampoffset, 0, 0.6, 0, this.size * -10);
+    translate(0, this.ampoffset);
     push();
 
-    ellipse(0, 0, this.size, this.size);
+    var size = this.size * this.sizeAdj;
+    ellipse(0, 0, size, size);
     fill(255, 200, 0, 50);
-    ellipse(0, 0, this.size + 8, this.size + 8);
+    ellipse(0, 0, size + 8, size + 8);
 
     pop();
 
